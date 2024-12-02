@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ Панель</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Админ Панель</h1>
+        <div class="form-section">
+            <h2>Добавить автомобиль</h2>
+            <input type="text" id="car-id" placeholder="ID автомобиля">
+            <input type="text" id="owner" placeholder="Владелец">
+            <button onclick="addCar()">Добавить автомобиль</button>
+            <p id="admin-message" class="message"></p>
+        </div>
+        <div class="form-section">
+            <h2>Добавить нарушение</h2>
+            <input type="text" id="car-id-violation" placeholder="ID автомобиля">
+            <input type="date" id="violation-date">
+            <input type="time" id="violation-time">
+            <input type="text" id="violation-type" placeholder="Тип нарушения">
+            <input type="number" id="violation-fine" placeholder="Размер штрафа">
+            <button onclick="addViolation()">Добавить нарушение</button>
+            <p id="violation-message" class="message"></p>
+        </div>
+        <div class="list-section">
+            <h2>Список автомобилей</h2>
+            <ul id="car-list-items"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
